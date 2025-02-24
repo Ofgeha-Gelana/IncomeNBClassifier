@@ -88,5 +88,5 @@ However, Gaussian Naïve Bayes is a simpler and faster model that can still be u
 
 ## 🚀 Task - 2
 
-- **Bayesian Optimization:**  
-[**Task**](https://medium.com/@ofgehagelana2019/the-paper-practical-bayesian-optimization-of-machine-learning-algorithms-by-jasper-snoek-hugo-8819a2981f79)  
+<!-- - **Bayesian Optimization:**   -->
+[**Bayesian Optimization**](https://medium.com/@ofgehagelana2019/the-paper-practical-bayesian-optimization-of-machine-learning-algorithms-by-jasper-snoek-hugo-8819a2981f79)  
