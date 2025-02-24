@@ -13,7 +13,7 @@ This project predicts whether a person makes more than 50K a year based on vario
 8. [License](#license)
 
 ## Project Overview
-This project uses the **Adult Income Dataset** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult). The goal is to predict whether a person earns more than 50K a year based on different demographic features. A Gaussian Naive Bayes classifier is used for classification, and model performance is evaluated using accuracy, confusion matrix, and other metrics.
+This project uses the **Adult Income Dataset** from the [UCI Machine Learning](https://archive.ics.uci.edu/ml/datasets/adult). The goal is to predict whether a person earns more than 50K a year based on different demographic features. A Gaussian Naive Bayes classifier is used for classification, and model performance is evaluated using accuracy, confusion matrix, and other metrics.
 
 ## Dataset
 The dataset used is the **Adult Income Dataset**, which contains the following columns:
