@@ -82,8 +82,6 @@ However, Gaussian Naïve Bayes is a simpler and faster model that can still be u
 4. Evaluate the results.
 
 ## Future Work
-- Experiment with additional models such as Decision Trees and Random Forest.
-- Perform feature engineering to improve model accuracy.
 - Optimize hyperparameters for better performance.
 
 ---
