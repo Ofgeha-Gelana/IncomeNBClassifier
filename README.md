@@ -1,41 +1,91 @@
-# Income Prediction using Gaussian Naive Bayes Classifier
-
-This project predicts whether a person makes more than 50K a year based on various features such as age, workclass, education, etc., using a Gaussian Naive Bayes classifier.
+# Income Classification: Gaussian Naïve Bayes vs. Logistic Regression
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Dataset](#dataset)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Model Evaluation](#model-evaluation)
-6. [Results](#results)
-7. [Contributing](#contributing)
-8. [License](#license)
+- [Problem Statement](#problem-statement)
+- [Dataset](#dataset)
+- [Methodology](#methodology)
+  - [Gaussian Naïve Bayes](#gaussian-naïve-bayes)
+  - [Logistic Regression](#logistic-regression)
+- [Results and Comparison](#results-and-comparison)
+- [Conclusion](#conclusion)
+- [How to Run](#how-to-run)
 
-## Project Overview
-This project uses the **Adult Income Dataset** from the [UCI Machine Learning](https://archive.ics.uci.edu/ml/datasets/adult). The goal is to predict whether a person earns more than 50K a year based on different demographic features. A Gaussian Naive Bayes classifier is used for classification, and model performance is evaluated using accuracy, confusion matrix, and other metrics.
+## Problem Statement
+The objective of this project is to classify whether a person earns more than $50K per year based on demographic and employment-related attributes. This classification is done using two models:
+- **Gaussian Naïve Bayes**
+- **Logistic Regression**
 
 ## Dataset
-The dataset used is the **Adult Income Dataset**, which contains the following columns:
+The dataset used for this project is the **Adult Income Dataset**, which contains various features such as age, education, occupation, and hours worked per week.
 
-- `age`: Age of the person.
-- `workclass`: The type of employment.
-- `fnlwgt`: Final weight.
-- `education`: The highest level of education.
-- `education_num`: Numeric representation of the education level.
-- `marital_status`: Marital status.
-- `occupation`: Type of occupation.
-- `relationship`: Type of relationship.
-- `race`: Race of the person.
-- `sex`: Gender of the person.
-- `capital_gain`: Capital gain in dollars.
-- `capital_loss`: Capital loss in dollars.
-- `hours_per_week`: Hours worked per week.
-- `native_country`: Country of origin.
-- `income`: Target variable (<=50K or >50K).
+## Methodology
+### Gaussian Naïve Bayes
+Gaussian Naïve Bayes is a probabilistic classifier based on Bayes' Theorem, assuming that the features follow a normal distribution.
 
-## Installation
+- **Training Accuracy:** 80.67%
+- **Test Accuracy:** 80.83%
+- **Confusion Matrix:**
+  ```
+  [[5999 1408]
+   [ 465 1897]]
+  ```
+  - **True Positives (TP):** 5999
+  - **True Negatives (TN):** 1897
+  - **False Positives (FP):** 1408
+  - **False Negatives (FN):** 465
+
+### Logistic Regression
+Logistic Regression is a linear model that predicts the probability of a categorical outcome.
+
+- **Training Accuracy:** 84.72%
+- **Test Accuracy:** 84.72%
+- **Confusion Matrix:**
+  ```
+  [[6879  528]
+   [ 965 1397]]
+  ```
+  - **True Positives (TP):** 6879
+  - **True Negatives (TN):** 1397
+  - **False Positives (FP):** 528
+  - **False Negatives (FN):** 965
+
+## Results and Comparison
+| Model                   | Training Accuracy | Test Accuracy | TP   | TN   | FP   | FN   |
+|-------------------------|------------------|--------------|------|------|------|------|
+| Gaussian Naïve Bayes    | 80.67%           | 80.83%       | 5999 | 1897 | 1408 |  465 |
+| Logistic Regression     | 84.72%           | 84.72%       | 6879 | 1397 |  528 |  965 |
+
+- Logistic Regression outperforms Gaussian Naïve Bayes in terms of accuracy.
+- Gaussian Naïve Bayes has a higher False Positive rate compared to Logistic Regression.
+- Logistic Regression is more reliable for this classification task due to its higher accuracy and lower FP rate.
+
+## Conclusion
+From the results, **Logistic Regression** is the better model for predicting whether a person makes more than $50K, as it achieves higher accuracy and lower misclassification rates.
+
+However, Gaussian Naïve Bayes is a simpler and faster model that can still be useful when dealing with large datasets.
+
+## How to Run
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/YourUsername/IncomeNBClassifier.git
+   ```sh
+   git clone https://github.com/Ofgeha-Gelana/IncomeNBClassifier.git
+   ```
+2. Navigate to the project directory:
+   ```sh
    cd IncomeNBClassifier
+   ```
+3. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+   ```
+4. Evaluate the results.
+
+## Future Work
+- Experiment with additional models such as Decision Trees and Random Forest.
+- Perform feature engineering to improve model accuracy.
+- Optimize hyperparameters for better performance.
+
+---
+This project showcases a practical comparison between Gaussian Naïve Bayes and Logistic Regression for income classification. 🚀
+
