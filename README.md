@@ -85,5 +85,8 @@ However, Gaussian Naïve Bayes is a simpler and faster model that can still be u
 - Optimize hyperparameters for better performance.
 
 ---
-This project showcases a practical comparison between Gaussian Naïve Bayes and Logistic Regression for income classification. 🚀
 
+## 🚀 Task - 2
+
+- **Naïve Bayes Prediction:**  
+  [https://medium.com/@ofgehagelana2019/the-paper-practical-bayesian-optimization-of-machine-learning-algorithms-by-jasper-snoek-hugo-8819a2981f79](Bayesian Optimization)
