@@ -16,7 +16,7 @@ The objective of this project is to classify whether a person earns more than $5
 - **Logistic Regression**
 
 ## Dataset
-The dataset used for this project is the **Adult Income Dataset**, which contains various features such as age, education, occupation, and hours worked per week.
+The dataset used for this project is the [**Adult Income Dataset**](https://github.com/Ofgeha-Gelana/IncomeNBClassifier/blob/main/data/adult.csv), which contains various features such as age, education, occupation, and hours worked per week.
 
 ## Methodology
 ### Gaussian Naïve Bayes
