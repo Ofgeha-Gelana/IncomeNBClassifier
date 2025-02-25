@@ -5,10 +5,10 @@ import pandas as pd
 from pydantic import BaseModel
 
 # Load trained models
-with open("gaussian_nb.pkl", "rb") as f:
+with open("./model/gaussian_nb.pkl", "rb") as f:
     gnb_model = pickle.load(f)
 
-with open("logistic_regression.pkl", "rb") as f:
+with open("./model/regression.pkl", "rb") as f:
     lr_model = pickle.load(f)
 
 # Initialize FastAPI
